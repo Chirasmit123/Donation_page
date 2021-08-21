@@ -1,0 +1,66 @@
+<html>
+<head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <title></title>
+  <link rel="stylesheet" href="./css/log.css" title="" type="" />
+</head>
+<body>
+  <div class="hero container-fluid">
+    <div class="form-box">
+      <div class="button-box">
+        <div id="btn">
+          
+        </div>
+        <button type="button" class="toggle-btn" onclick="logIn()">Login</button>
+        <button type="button" class="toggle-btn" onclick="signUp()" style="padding-left:20%">Sign up</button>
+      </div>
+      <form class="input-group" id="login">
+        <div class="">
+        <input type="email" class="input-field" placeholder="abc@gmail.com"/>
+        <input type="text" class="input-field" placeholder="User Id" required=""/>
+        <input type="text" class="input-field" placeholder="Enter Password" required/>
+        <input type="checkbox" class="check-box"/><span>Remember Password</span>
+     
+        </div>   
+      <div>
+       <button type="submit" class="submit-btn">Login</button>
+      </div>     
+      </form>
+      <form class="input-group" id="register">
+        <div class="">
+        <input type="email" class="input-field" placeholder="abc@gmail.com"/>
+        <input type="text" class="input-field" placeholder="First Name" />
+        <input type="text" class="input-field" placeholder="Last Name" />
+        <input type="text" class="input-field" placeholder="User Id" required=""/>
+        <input type="text" class="input-field" placeholder="Enter Password" required/>
+        <input type="text" class="input-field" placeholder="Confirm Password" required/>
+        <input type="checkbox" class="check-box"/><span>I agree to the terms & conditions</span>
+     
+        </div>   
+      <div>
+       <button type="submit" class="submit-btn">Sign Up</button>
+      </div>     
+      </form>
+    </div>
+  </div>
+  <script>
+    var x=document.getElementById("login");
+    var y=document.getElementById("register");
+    var z=document.getElementById("btn");
+    function signUp()
+    {
+      x.style.left="-400px";
+      y.style.left="15%";
+      z.style.left="110px"
+    }
+    function logIn()
+    {
+      x.style.left="15%"
+      y.style.left="110%"
+      z.style.left="0"
+    }
+  </script>
+</body>
+</html>

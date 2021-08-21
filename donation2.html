@@ -1,0 +1,247 @@
+<html>
+
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+    crossorigin="anonymous">
+    <title></title>
+    <style type="text/css" media="all">
+.gpay
+{
+  position: relative;
+  margin-left: 29%;
+  top: 5%;
+  background-color: rgba(0,0,275,0.5);
+  border-radius:50%;
+  padding:3px 8px;
+}
+.mystyle
+    {
+      background-color: white;
+    }
+.payt
+{
+  position: relative;
+  margin-left: 48%;
+  top: 10%;
+  background-color: rgba(0,0,275,0.5);
+  border-radius:50%;
+  padding:3px 8px;
+}
+.ppay
+{
+  position: relative;
+  margin-left: 37%;
+  top: 3%;
+  background-color: rgba(0,0,275,0.5);
+  border-radius:50%;
+  padding:3px 7px;
+}
+.pgpay
+{
+  width: 10%;
+  height: 100%;
+  border-radius: 50%;
+}
+.ppayt
+{
+  width: 12%;
+  height: 100%;
+  border-radius: 50%;
+}
+.pppay
+{
+  width: 10%;
+  height: 100%;
+  border-radius: 50%;
+  margin-top: -2%;
+}
+.input-group
+{
+  position: absolute;
+  transition: 0.5s;
+}
+.input-group2
+{
+   position: absolute;
+   transition: 0.5s;
+}
+#form2
+{
+  left: 42%;
+}
+#form3
+{
+  left: 56%;
+}
+#form4
+{
+  left: 70%;
+}
+.input-field
+{
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+.submit-btn
+{
+  width: 150%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  position: relative;
+  left: 70%;
+  top: 20%;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  margin-left: -20%;
+}
+.bac 
+{
+  margin-top: 14%;
+  left: -40%;
+  position: relative;
+  text-decoration: underline;
+}
+.fg
+{
+  display: flex;
+}
+#google:hover
+{
+box-shadow: 0 0 10px 9px #086c26;
+}
+#paytm2:hover
+{
+box-shadow: 0 0 10px 9px #042e6f;
+}
+#Phonepay:hover
+{
+box-shadow: 0 0 10px 9px #6739B7;
+}
+
+    </style>
+    <link rel="stylesheet" href="./css/dona.css" title="" type="" />
+  </head>
+
+  <body>
+    <div class="hero container-fluid">
+<div id="nav-placeholder">
+     
+   </div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+      <br><br><br>
+      <div class="form-box fg">
+      <div class="">
+<form class="input-group2" id="lol">
+        <h2 style="left:9.5%;top:3%;text-decoration:underline;position:relative">Choose Payment Method</h2>
+       <br>
+        <div class="boxes" id="google" onclick="gForm()">
+          <h2 style="padding-top:2%;position:relative"><img class="pgpay" src="./images/gpay.png" alt="" />Google Pay<span class="gpay">-></span>
+          </h2>
+        </div>
+        <br>
+        <div class="boxes" id="paytm2" onclick="payForm()">
+          <h2 style="padding-top:2%;position:relative"><img class="ppayt" src="./images/paytm.jpg" alt="" />Paytm<span class="payt">-></span>
+          </h2>
+        </div>
+        <br>
+        <div class="boxes" id="Phonepay" onclick="pForm()">
+          <h2 style="padding-top:2%;position:relative"><img class="pppay" src="./images/phonepe.jpeg" alt="" />Phone Pe<span class="ppay">-></span>
+          </h2>
+        </div>
+      </form>
+      </div>
+       <div style="display:flex">
+       <form class="input-group" id="form2">
+        <input type="email" class="input-field" placeholder="abc@gmail.com"/>
+        <input type="text" class="input-field" placeholder="First Name" required=""/>
+        <input type="text" class="input-field" placeholder="Last Name" required=""/>
+        <input type="text" class="input-field" placeholder="User Id" required=""/>
+        <textarea name="" id="" rows="2" cols="45" placeholder="Your Comment" required=""></textarea>
+       <div class="">
+        <button type="submit" class="submit-btn" style="background-color:#086c26;color:#efc654">Proceed to Pay</button>
+       </div>
+       <span onclick="backIt()" class="bac"><-Back</span>
+       </form>
+       <form class="input-group" id="form3">
+        <input type="email" class="input-field" placeholder="abc@gmail.com"/>
+        <input type="text" class="input-field" placeholder="First Name" required=""/>
+        <input type="text" class="input-field" placeholder="Last Name" required=""/>
+        <input type="text" class="input-field" placeholder="User Id" required=""/>
+       <textarea name="" id="" rows="2" cols="45" placeholder="Your Comment" required=""></textarea>
+        <div class="">
+          <button type="submit" class="submit-btn" style="background-color:#042e6f;color:#00baf2">Proceed to Pay</button>
+        </div>      
+        <span onclick="backIt()" class="bac"><-Back</span>
+       </form>
+       <form class="input-group" id="form4">
+        <input type="email" class="input-field" placeholder="abc@gmail.com"/>
+        <input type="text" class="input-field" placeholder="First Name" required=""/>
+        <input type="text" class="input-field" placeholder="Last Name" required=""/>
+        <input type="text" class="input-field" placeholder="User Id" required=""/>
+        <textarea name="" id="" rows="2" cols="45" placeholder="Your Comment" required=""></textarea>
+       <div class="">
+        <button type="submit" class="submit-btn" style="background-color:#6739B7;color:#fff">Proceed to Pay</button>
+       </div>
+        <span onclick="backIt()" class="bac"><-Back</span>
+       </form>
+       </div>
+      </div>
+    </div>
+    <script>
+      var x=document.getElementById("form2");
+      var y=document.getElementById("form3");
+      var z=document.getElementById("form4");
+      var a=document.getElementById("lol");
+      var e=document.getElementById("google");
+      var f=document.getElementById("paytm2");
+      var g=document.getElementById("Phonepay");
+      
+      function gForm()
+      {
+        x.style.left="2%";
+        y.style.left="56%";
+        z.style.left="70%";
+        a.style.left="-700px";
+      }
+      function payForm()
+      {
+        y.style.left="-31.5%";
+        x.style.left="56%";
+        z.style.left="70%";
+        a.style.left="-700px";
+      }
+      function pForm()
+      {
+        z.style.left="-65%";
+        y.style.left="56%";
+        x.style.left="70%";
+        a.style.left="-700px";
+      }
+      function backIt()
+      {
+        a.style.left="0%";
+        y.style.left="42%";
+        z.style.left="56%";
+        x.style.left="70%";
+      }
+    </script>
+  </body>
+
+</html>
