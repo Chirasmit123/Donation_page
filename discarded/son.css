@@ -1,0 +1,28 @@
+.container
+ {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
+  animation-name: some2;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+  @keyframes some2
+    {
+        0% {
+            opacity: 1;
+        }
+        25% {
+            opacity: 0.75;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 0;
+        }
+    } 
